@@ -1,0 +1,6 @@
+$primary:       #{{ primary }};
+$secondary:     #{{ secondary }};
+$success:       #{{ success }};
+$info:          #{{ info }};
+$light:         lighten(#{{ bg }}, 50%);
+$dark:          darken(#{{ bg }}, 50%);
