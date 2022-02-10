@@ -1,6 +1,16 @@
-$primary:       #FCEBB6;
-$secondary:     #5E412F;
-$success:       #F07818;
-$info:          #78C0A8;
-$light:         lighten(#F0A830, 50%);
-$dark:          darken(#F0A830, 50%);
+$primary:       #EFEECC;
+$secondary:     #FE8B05;
+$success:       #FE0557;
+$info:          #0AABBA;
+$light:         lighten(#400403, 20%);
+$dark:          darken(#400403, 20%);
+
+
+.jumbotron {
+    background-image: url(http://static.colourlovers.com/images/patterns/3268/3268386.png);
+    color: lighten(#0AABBA, 30%);
+}
+
+body {
+    background-color: lighten(#400403, 40%) !important;
+}

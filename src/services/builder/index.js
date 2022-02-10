@@ -10,12 +10,13 @@ class StyleSheetBuilder {
                 templateFile: `${__dirname}/bootstrap/_overrides.scss.template`,
                 variablesFile: `${__dirname}/bootstrap/_overrides.scss`,
                 targetFile: `${__dirname}/bootstrap/bootstrap.scss`,
-                inputAdapter: (colors) => ({
+                inputAdapter: (colors, imageUrl) => ({
                     primary:   colors[0] || '0d6efd',
                     secondary: colors[1] || '6c757d',
                     success:   colors[2] || '198754',
                     info:      colors[3] || '0dcaf0',
-                    bg:        colors[4] || 'adb5bd'
+                    bg:        colors[4] || 'adb5bd',
+                    imageUrl
                 })
             }
         }
@@ -24,7 +25,7 @@ class StyleSheetBuilder {
     async compileStyleSheet (themeName = 'bootstrap', pattern) {
         if (Object.keys(this.themes).includes(themeName)){
             const theme = this.themes[themeName];
-            const inputData = theme.inputAdapter(pattern.colors);
+            const inputData = theme.inputAdapter(pattern.colors, pattern.imageUrl);
 
             this._compileVariablesFile(inputData, theme.templateFile, theme.variablesFile);
             return this._compileSCSS(themeName, pattern.id, theme.targetFile);

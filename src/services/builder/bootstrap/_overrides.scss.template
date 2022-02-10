@@ -2,5 +2,15 @@ $primary:       #{{ primary }};
 $secondary:     #{{ secondary }};
 $success:       #{{ success }};
 $info:          #{{ info }};
-$light:         lighten(#{{ bg }}, 50%);
-$dark:          darken(#{{ bg }}, 50%);
+$light:         lighten(#{{ bg }}, 20%);
+$dark:          darken(#{{ bg }}, 20%);
+
+
+.jumbotron {
+    background-image: url({{ imageUrl }});
+    color: lighten(#{{ info }}, 30%);
+}
+
+body {
+    background-color: lighten(#{{ bg }}, 40%) !important;
+}
