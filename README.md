@@ -1,9 +1,11 @@
-
 ## Install
 `npm install`
 
 ## Running
 `npm run start`
+
+## Test
+`npm run test`
 
 ## Building a CSS file
 
