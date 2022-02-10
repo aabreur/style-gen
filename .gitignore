@@ -1,2 +1,3 @@
 node_modules
-src/public/css/*
+src/public/css/*.css
+src/services/builder/bootstrap/_overrides.scss
