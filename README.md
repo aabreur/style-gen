@@ -37,3 +37,18 @@ Then you are able to get the CSS file with :
 `GET localhost:3000/css/bootstrap582552.css` 
 
 Or point the browser to the demo to have a look on the new CSS.
+
+## Deployment
+There is not a deployment pipeline set up, but here are some ideas on how I pretend to proceed.
+
+### The first deployment
+
+![First deployment](/style-gen1.drawio.png)
+
+### Scaling the app
+
+![Scaling the app](/style-gen2.drawio.png)
+
+### Going Serverless
+
+![Going serverless](/style-gen3.drawio.png)

@@ -8,7 +8,18 @@ $dark:          darken(#{{ bg }}, 20%);
 
 .jumbotron {
     background-image: url({{ imageUrl }});
-    color: lighten(#{{ info }}, 30%);
+    color: #fff;
+    h1 {
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px lighten(#{{ info }}, 50%),
+            0 0 82px lighten(#{{ info }}, 50%),
+            0 0 92px lighten(#{{ info }}, 50%),
+            0 0 102px lighten(#{{ info }}, 30%),
+            0 0 151px lighten(#{{ info }}, 30%)
+    }
 }
 
 body {

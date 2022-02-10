@@ -1,16 +1,27 @@
-$primary:       #FAF9CD;
-$secondary:     #002A31;
-$success:       #85A0AB;
-$info:          #BCB203;
-$light:         lighten(#322B33, 20%);
-$dark:          darken(#322B33, 20%);
+$primary:       #E3E8CF;
+$secondary:     #ADD8C7;
+$success:       #8CCCBE;
+$info:          #7AC1C4;
+$light:         lighten(#70AFC4, 20%);
+$dark:          darken(#70AFC4, 20%);
 
 
 .jumbotron {
-    background-image: url(http://static.colourlovers.com/images/patterns/4370/4370608.png);
-    color: lighten(#BCB203, 30%);
+    background-image: url(http://static.colourlovers.com/images/patterns/176/176757.png);
+    color: #fff;
+    h1 {
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px lighten(#7AC1C4, 50%),
+            0 0 82px lighten(#7AC1C4, 50%),
+            0 0 92px lighten(#7AC1C4, 50%),
+            0 0 102px lighten(#7AC1C4, 30%),
+            0 0 151px lighten(#7AC1C4, 30%)
+    }
 }
 
 body {
-    background-color: lighten(#322B33, 40%) !important;
+    background-color: lighten(#70AFC4, 40%) !important;
 }
