@@ -1,7 +1,7 @@
 # The Style gen app
 This is stylesheet generator ( .css files ). You pick an input pattern on [ColourLovers](http://www.colourlovers.com/patterns/most-loved/all-time/meta) and provide the ID to app to generate a [Bootstrap](https://getbootstrap.com/) theme based on pattern chosen.
 
-![How it works](/style-gen1.drawio.png)
+![How it works](/style-gen0.drawio.png)
 
 ## Install
 `npm install`
